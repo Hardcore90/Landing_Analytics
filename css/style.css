@@ -395,3 +395,78 @@ a {
 }
 
 /* Features End */
+/* Plans Start */
+.plans {
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 100%;
+  min-height: 1086px;
+  background: url(../img/Rectangle\ 5.svg) bottom/contain,
+    url(../img/Rectangle\ 7.svg) top/contain;
+  background-repeat: no-repeat;
+}
+
+.plans_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans_content__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 272px;
+}
+
+.plans_content__txt {
+  text-align: center;
+  color: #8794ba;
+}
+
+.plans_content__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.plans_content_list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans_content_list__link {
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  width: 100%;
+  min-height: 440px;
+}
+
+.link1:targeted ~ .plans_content_list__link {
+  background: #ffffff;
+}
+
+.plans_content_list_title {
+}
+
+.plans_content_list__planTxt {
+}
+
+.hr_line {
+}
+
+.plans_content_list_price {
+}
+
+.plans_content_list_priceTxt {
+}
+
+.plans_content_list__btn {
+}
