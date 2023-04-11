@@ -420,11 +420,15 @@ a {
   text-align: center;
   color: #ffffff;
   margin-top: 272px;
+  margin-bottom: 30px;
 }
 
 .plans_content__txt {
   text-align: center;
   color: #8794ba;
+  margin-bottom: 80px;
+  max-width: 630px;
+  width: 100%;
 }
 
 .plans_content__list {
@@ -434,39 +438,120 @@ a {
   gap: 80px;
 }
 
-.plans_content_list__item {
+.plans_content_list__link {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 340px;
+  width: 100%;
+  background-color: #0f1f4b;
+  fill-opacity: 0.7;
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  display: none;
 }
 
 .plans_content_list__link {
   display: flex;
   flex-direction: column;
-  max-width: 340px;
+  box-sizing: border-box;
   width: 100%;
-  min-height: 440px;
-}
-
-.link1:targeted ~ .plans_content_list__link {
-  background: #ffffff;
+  padding: 0 60px;
 }
 
 .plans_content_list_title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .plans_content_list__planTxt {
+  text-align: center;
+  color: #8794ba;
+  margin-bottom: 37px;
 }
 
-.hr_line {
+hr {
+  border: 1px solid #2a407c;
+  margin-bottom: 28px;
+  max-width: 220px;
+  width: 100%;
 }
 
 .plans_content_list_price {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.plans_content_list_price span {
+  font-size: 30px;
+  line-height: 35px;
 }
 
 .plans_content_list_priceTxt {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #8794ba;
+  margin-bottom: 40px;
 }
 
 .plans_content_list__btn {
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #2a407c;
+  border-radius: 68px;
+  background: transparent;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 15.5px 80px;
+  margin-bottom: 70px;
+}
+
+.plans_content_list__item input[type="radio"]:checked + label {
+  background-color: #ffffff;
+  fill-opacity: 0.7;
+  box-shadow: 0px 18px 50px -15px #060f28;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.plans_content_list__item
+  input[type="radio"]:checked
+  + label
+  > .plans_content_list_title {
+  color: #060f28;
+}
+
+.plans_content_list__item
+  input[type="radio"]:checked
+  + label
+  > .plans_content_list_price {
+  color: #060f28;
+}
+
+.plans_content_list__item input[type="radio"]:checked + label > hr {
+  border: 1px solid #d3d9e9;
+}
+
+.plans_content_list__item
+  input[type="radio"]:checked
+  + label
+  > .plans_content_list__btn {
+  background: #ef2a82;
+  border: none;
 }
