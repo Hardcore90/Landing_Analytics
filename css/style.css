@@ -645,7 +645,7 @@ hr {
   border-radius: 8px;
   padding: 32px 40.5px;
   gap: 16px;
-  max-width: 428px;
+  max-width: 348px;
   width: 100%;
   height: 475px;
   justify-content: center;
@@ -661,6 +661,8 @@ hr {
   flex: none;
   order: 0;
   flex-grow: 0;
+  max-width: 347px;
+  width: 100%;
 }
 
 .form-sign-up__submit-btn {
@@ -697,6 +699,7 @@ hr {
   width: 100%;
   padding: 16px;
   text-align: start;
+  box-sizing: border-box;
 }
 
 .form-sign-up__input-password {
@@ -710,14 +713,61 @@ hr {
 }
 
 .form-sign-up__help-us-txt {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  flex: none;
+  flex-grow: 0;
 }
 
-.form-sign-up_rating {
-  display: flex;
+/* Rating style*/
+.star-rating {
+  font-size: 0;
 }
+.star-rating__wrap {
+  display: inline-block;
+  font-size: 1rem;
+}
+.star-rating__wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.star-rating__ico {
+  float: right;
+  padding-left: 2px;
+  cursor: pointer;
+  color: #ffb300;
+}
+.star-rating__ico:last-child {
+  padding-left: 0;
+}
+.star-rating__input {
+  display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before {
+  content: "\f005";
+}
+
+/* Rating style end*/
 
 .form-sign-up__hr {
+  max-width: 336px;
+  width: 100%;
+  opacity: 0.48;
+  border: 1px solid #8989a2;
 }
 
 .form-sign-up__login-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8989a2;
+}
+
+.form-sign-up__login-link a {
+  color: #722ed1;
 }

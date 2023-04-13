@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analytics</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -299,10 +303,10 @@
         </article>
         <article class="form__sign-up-wrp">
           <h3 class="form-sign-up__title">Sign Up</h3>
-          <button class="form-sign-up__submit-btn" type="submit">
-            Start your free trial
-          </button>
           <form class="form-sign-up__form" action="#">
+            <button class="form-sign-up__submit-btn" type="submit">
+              Start your free trial
+            </button>
             <input
               class="form-sign-up__input-email"
               type="email"
@@ -320,103 +324,72 @@
             />
           </form>
           <p class="form-sign-up__help-us-txt">Help us get better</p>
-          <ul class="form-sign-up_rating">
-            <li>
-              <input type="radio" value="1" name="star-radio1" />
-              <label for="star-radio1">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8 11.5679L3.59161 13.5676L4.13122 8.75704L0.867076 5.18237L5.60896 4.20902L8 0L10.391 4.20902L15.1329 5.18237L11.8688 8.75704L12.4084 13.5676L8 11.5679Z"
-                    fill="#FFD36F"
-                  />
-                </svg>
-              </label>
-            </li>
-            <li>
-              <input type="radio" value="2" name="star-radio2" />
-              <label for="star-radio2">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8 11.5679L3.59161 13.5676L4.13122 8.75704L0.867076 5.18237L5.60896 4.20902L8 0L10.391 4.20902L15.1329 5.18237L11.8688 8.75704L12.4084 13.5676L8 11.5679Z"
-                    fill="#FFD36F"
-                  />
-                </svg>
-              </label>
-            </li>
-            <li>
-              <input type="radio" value="3" name="star-radio3" />
-              <label for="star-radio3">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8 11.5679L3.59161 13.5676L4.13122 8.75704L0.867076 5.18237L5.60896 4.20902L8 0L10.391 4.20902L15.1329 5.18237L11.8688 8.75704L12.4084 13.5676L8 11.5679Z"
-                    fill="#FFD36F"
-                  />
-                </svg>
-              </label>
-            </li>
-            <li>
-              <input type="radio" value="4" name="star-radio4" />
-              <label for="star-radio4">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8 11.5679L3.59161 13.5676L4.13122 8.75704L0.867076 5.18237L5.60896 4.20902L8 0L10.391 4.20902L15.1329 5.18237L11.8688 8.75704L12.4084 13.5676L8 11.5679Z"
-                    fill="#FFD36F"
-                  />
-                </svg>
-              </label>
-            </li>
-            <li>
-              <input type="radio" value="5" name="star-radio5" />
-              <label for="star-radio5">
-                <svg
-                  width="16"
-                  height="14"
-                  viewBox="0 0 16 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8 11.5679L3.59161 13.5676L4.13122 8.75704L0.867076 5.18237L5.60896 4.20902L8 0L10.391 4.20902L15.1329 5.18237L11.8688 8.75704L12.4084 13.5676L8 11.5679Z"
-                    fill="#FFD36F"
-                  />
-                </svg>
-              </label>
-            </li>
-          </ul>
+          <form>
+            <div class="star-rating">
+              <div class="star-rating__wrap">
+                <input
+                  class="star-rating__input"
+                  id="star-5"
+                  type="radio"
+                  name="rating"
+                  value="5"
+                />
+                <label
+                  class="star-rating__ico fa fa-star-o fa-lg"
+                  for="star-5"
+                  title="Отлично"
+                ></label>
+                <input
+                  class="star-rating__input"
+                  id="star-4"
+                  type="radio"
+                  name="rating"
+                  value="4"
+                />
+                <label
+                  class="star-rating__ico fa fa-star-o fa-lg"
+                  for="star-4"
+                  title="Хорошо"
+                ></label>
+                <input
+                  class="star-rating__input"
+                  id="star-3"
+                  type="radio"
+                  name="rating"
+                  value="3"
+                />
+                <label
+                  class="star-rating__ico fa fa-star-o fa-lg"
+                  for="star-3"
+                  title="Удовлетворительно"
+                ></label>
+                <input
+                  class="star-rating__input"
+                  id="star-2"
+                  type="radio"
+                  name="rating"
+                  value="2"
+                />
+                <label
+                  class="star-rating__ico fa fa-star-o fa-lg"
+                  for="star-2"
+                  title="Плохо"
+                ></label>
+                <input
+                  class="star-rating__input"
+                  id="star-1"
+                  type="radio"
+                  name="rating"
+                  value="1"
+                />
+                <label
+                  class="star-rating__ico fa fa-star-o fa-lg"
+                  for="star-1"
+                  title="Ужасно"
+                ></label>
+              </div>
+            </div>
+          </form>
           <hr class="form-sign-up__hr" />
           <p class="form-sign-up__login-link">
             Already have an account? <a href="#">Login</a>
