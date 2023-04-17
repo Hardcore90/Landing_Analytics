@@ -64,6 +64,13 @@ a {
 
 .logo_link {
   height: 40px;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.logo_link:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease;
 }
 
 .left_nav_menu_list {
@@ -82,6 +89,16 @@ a {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.left_nav_menu_link:hover,
+.signIn_btn:hover {
+  opacity: 0.7;
+}
+
+.left_nav_menu_link:active,
+.signIn_btn:active {
+  color: #ff2c8b;
 }
 
 .header_sign_btn_wrp {
@@ -117,6 +134,22 @@ a {
   padding: 10px 51px;
   background: transparent;
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.signUp_btn:hover {
+  background: #ef2a82;
+  color: white;
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+.signUp_btn:active {
+  border: 1px solid #ef2a82;
+  background: transparent;
+  color: #ef2a82;
+  transition: all 0.2s ease;
 }
 
 .header_promo {
@@ -163,6 +196,21 @@ a {
   color: #ffffff;
   font-size: 16px;
   line-height: 19px;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+
+.header_promo_btn:hover {
+  outline: 1px solid white;
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+.header_promo_btn:active {
+  outline: 1px solid #ef2a82;
+  background: transparent;
+  color: #ef2a82;
+  transition: all 0.2s ease;
 }
 
 .header_promo_img {
@@ -517,6 +565,27 @@ input[type="radio"] {
   color: #ffffff;
   padding: 15.5px 80px;
   margin-bottom: 70px;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.plans_content_list__item
+  input[type="radio"]:not(:checked)
+  + label
+  > .plans_content_list__btn:hover {
+  border: 1px solid #ef2a82;
+  color: #ef2a82;
+  transform: scale(1.1);
+  transition: transform 1s ease;
+}
+
+.plans_content_list__item
+  input[type="radio"]:not(:checked)
+  + label
+  > .plans_content_list__btn:active {
+  background: white;
+  border: 1px solid #ef2a82;
+  color: #ef2a82;
 }
 
 .plans_content_list__item input[type="radio"]:checked + label {
@@ -551,6 +620,27 @@ input[type="radio"] {
   > .plans_content_list__btn {
   background: #ef2a82;
   border: none;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.plans_content_list__item
+  input[type="radio"]:checked
+  + label
+  > .plans_content_list__btn:hover {
+  transform: scale(1.2);
+  transition: transform 1s ease;
+}
+
+.plans_content_list__item
+  input[type="radio"]:checked
+  + label
+  > .plans_content_list__btn:active {
+  transform: scale(1.1);
+  transition: transform 1s ease;
+  background: #ef2a8334;
+  color: #ef2a82;
+  outline: 1px solid #ef2a82;
 }
 
 /* form Start */
@@ -627,6 +717,20 @@ input[type="radio"] {
   gap: 67px;
 }
 
+.form-trusted-company__icon-link img {
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.form-trusted-company__icon-link:hover img {
+  transform: scale(1.2);
+  transition: transform 1s ease;
+}
+
+.form-trusted-company__icon-link:active img {
+  opacity: 0.7;
+}
+
 .form-trusted-company__icon-image {
   display: block;
 }
@@ -687,6 +791,19 @@ input[type="radio"] {
   line-height: 24px;
   text-align: center;
   color: #ffffff;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.form-sign-up__submit-btn:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease;
+}
+
+.form-sign-up__submit-btn:active {
+  background: white;
+  border: 1px solid #722ed1;
+  color: #722ed1;
 }
 
 .form-sign-up__form {
@@ -792,6 +909,14 @@ input[type="radio"] {
   color: #722ed1;
 }
 
+.form-sign-up__login-link a:hover {
+  opacity: 0.7;
+}
+
+.form-sign-up__login-link a:active {
+  color: #8989a2;
+}
+
 /* Form end */
 /* Footer start*/
 
@@ -811,6 +936,15 @@ input[type="radio"] {
 
 .footer-left-nav-menu__logo_link {
   height: 30px;
+  fill: #8794ba;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+
+.footer-left-nav-menu__logo_link:hover {
+  fill: #ef2a82;
+  transform: scale(1.2);
+  transition: all 1s ease;
 }
 
 .footer-center-nav-menu__list {
@@ -828,10 +962,30 @@ input[type="radio"] {
   flex-grow: 0;
 }
 
+.footer-center-nav-menu__link:hover {
+  opacity: 0.7;
+}
+
+.footer-center-nav-menu__link:active {
+  color: #ef2a82;
+}
+
 .footer-right-icon-links__list {
   display: flex;
   justify-content: space-between;
   gap: 40px;
+}
+
+.footer-right-icon-links__icon-link svg {
+  fill: #8794ba;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+
+.footer-right-icon-links__icon-link:hover svg {
+  fill: #ef2a82;
+  transform: scale(1.5);
+  transition: all 1s ease;
 }
 
 @media (max-width: 1440px) {
