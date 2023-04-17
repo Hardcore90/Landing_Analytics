@@ -224,8 +224,6 @@ a {
 
 /* Header End */
 /* Features start */
-.features {
-}
 
 .main_features {
   margin-bottom: 130px;
@@ -446,8 +444,7 @@ a {
   max-width: 1600px;
   width: 100%;
   min-height: 1086px;
-  background: url(../img/Rectangle\ 5.svg) bottom/contain,
-    url(../img/Rectangle\ 7.svg) top/contain;
+  background-image: url(/img/background-bottom.svg);
   background-repeat: no-repeat;
 }
 
@@ -456,6 +453,11 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.plans_content_list__item {
+  max-width: 320px;
+  width: 100%;
 }
 
 .plans_content__title {
@@ -481,6 +483,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 80px;
+  overflow: hidden;
 }
 
 .plans_content_list__link {
