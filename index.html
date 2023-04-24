@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -92,6 +98,54 @@
             <div class="header_sign_btn_wrp">
               <a class="signIn_btn" href="#">Sign in</a>
               <button class="signUp_btn">Sign Up</button>
+              <nav class="navbar bg-light">
+                <div class="container-fluid">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                  >
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                    <div class="offcanvas-body">
+                      <ul
+                        class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                      >
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Blog</a>
+                        </li>
+                      </ul>
+                      <button class="signUp_btn_mobile">Sign Up</button>
+                    </div>
+                  </div>
+                </div>
+              </nav>
             </div>
           </nav>
         </div>
@@ -101,10 +155,14 @@
             <h1 class="header_promo_title">
               Monitor your business on real-time dashboard
             </h1>
-            <p class="header_promo_txt">
+            <p class="header_promo_txt-larg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
               nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
               vitae nibh nunc mattis imperdiet sed nullam.
+            </p>
+            <p class="header_promo_txt-small">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+              nisi aliquet volutpat pellentesque volutpat est.
             </p>
             <button class="header_promo_btn">Try for free</button>
           </article>
@@ -514,5 +572,10 @@
         </div>
       </section>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
