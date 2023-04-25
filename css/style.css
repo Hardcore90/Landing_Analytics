@@ -456,7 +456,7 @@ a {
   max-width: 1600px;
   width: 100%;
   min-height: 1086px;
-  background-image: url(/img/background-bottom.svg);
+  background-image: url(../img/background-bottom.svg);
   background-repeat: no-repeat;
 }
 
@@ -1052,7 +1052,7 @@ input[type="radio"] {
     --bs-navbar-toggler-border-radius: 0;
     position: relative;
     --bs-navbar-toggler-icon-bg: url();
-    background-image: url(/img/menu-icon.svg);
+    background-image: url(../img/menu-icon.svg);
   }
 
   .bg-light {
@@ -1077,7 +1077,7 @@ input[type="radio"] {
     position: absolute;
     top: 25px;
     right: 25px;
-    background-image: url(/img/cross.png);
+    background-image: url(../img/cross.png);
     padding: 0;
     background-size: cover;
     width: 25px;
@@ -1348,7 +1348,7 @@ input[type="radio"] {
   .plans {
     max-width: 375px;
     min-height: 857px;
-    background-image: url(/img/background-bottom-mobile.png);
+    background-image: url(../img/background-bottom-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
