@@ -26,3 +26,19 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
   }
 });
+
+inputEmail.addEventListener("input", () => {
+  if (inputEmail.value != "") {
+    inputEmail.style.border = "2px solid green";
+  }
+});
+
+inputRePassword.addEventListener("input", () => {
+  if (inputRePassword.value == inputPassword.value) {
+    inputPassword.style.border = "2px solid green";
+    inputRePassword.style.border = "2px solid green";
+  } else {
+    inputRePassword.style.border = "2px solid red";
+    inputPassword.style.border = "2px solid red";
+  }
+});
