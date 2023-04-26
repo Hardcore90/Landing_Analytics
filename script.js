@@ -42,3 +42,6 @@ inputRePassword.addEventListener("input", () => {
     inputPassword.style.border = "2px solid red";
   }
 });
+
+const scrollEl = document.querySelector(".plans_content__list-wrp");
+scrollEl.scrollTop = "440px";
