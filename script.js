@@ -45,3 +45,17 @@ inputRePassword.addEventListener("input", () => {
 
 const scrollEl = document.querySelector(".plans_content__list-wrp");
 scrollEl.scrollTop = "440px";
+
+const navbarList = document.querySelectorAll(".offcanvas-body");
+navbarList.forEach((element) => {
+  element.addEventListener("click", (e) => {
+    const close = document.querySelector(".btn-close");
+    close.click();
+    e.preventDefault();
+  });
+});
+
+const signUpBtnMobile = document.querySelector(".signUp_btn_mobile");
+signUpBtnMobile.addEventListener("click", (e) => {
+  e.preventDefault();
+});
