@@ -81,6 +81,7 @@ a {
   height: 19px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .left_nav_menu_link {
@@ -160,7 +161,6 @@ a {
 .header_promo {
   display: flex;
   gap: 44px;
-  margin-left: 210px;
 }
 
 .header_promo_content {
@@ -231,7 +231,7 @@ a {
   width: 100%;
   min-height: 625px;
   background-image: url(../img/promo_img.svg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -1027,18 +1027,41 @@ input[type="radio"] {
 }
 
 @media (max-width: 1440px) {
+  .center,
   .header_promo {
-    margin-left: 134px;
+    max-width: 982px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .header_promo_img {
+    background-size: contain;
+    background-position: center;
   }
 
   .plans_content__list-wrp {
     overflow: auto;
   }
+
+  .reports_and_widget {
+    justify-content: center;
+  }
+
+  .customizable {
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .dashboard {
+    justify-content: center;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .center {
-    max-width: 728px;
+    max-width: 984px;
     width: 100%;
     margin: 0 auto;
   }
@@ -1160,11 +1183,27 @@ input[type="radio"] {
     color: #ff2c8b;
   }
 
-  .footer-center-nav-menu__list {
+  .form__sign-up-wrp::before {
     display: none;
   }
+}
 
-  .form__sign-up-wrp::before {
+@media (min-width: 426px) and (max-width: 768px) {
+  .center {
+    max-width: 728px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header_promo_title {
+    font-size: 40px;
+  }
+
+  .header_promo_img {
+    min-height: 470px;
+  }
+
+  .footer-center-nav-menu__list {
     display: none;
   }
 }
@@ -1622,6 +1661,14 @@ input[type="radio"] {
   .footer-right-icon-links__list {
     height: 24.05px;
   }
+
+  .header_promo_img {
+    max-width: 385px;
+  }
+
+  .header_background_img {
+    max-width: 425px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1629,6 +1676,10 @@ input[type="radio"] {
     max-width: 335px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .header_promo {
+    margin-top: 29px;
   }
 
   .header_promo_img {
