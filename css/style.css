@@ -46,6 +46,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
+  position: relative;
 }
 
 .header_nav_menu {
@@ -161,7 +162,6 @@ a {
 .header_promo {
   display: flex;
   gap: 44px;
-  position: relative;
 }
 
 .header_promo_content {
@@ -228,14 +228,16 @@ a {
 }
 
 .header_promo_img {
-  max-width: 946px;
+  max-width: 797px;
   width: 100%;
   min-height: 625px;
   /* width: 30vmax;
   height: 20vmax; */
-  background-image: url(../img/promo_img.svg);
-  background-size: cover;
+  background-image: url(../img/main-screen.svg);
+  background-size: contain;
   background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
 }
 
 /* Header End */
@@ -1041,6 +1043,12 @@ input[type="radio"] {
   .header_promo_img {
     background-size: contain;
     background-position: center;
+    position: static;
+    background-image: url(../img/promo_img.svg);
+  }
+
+  .header_promo_btn {
+    width: 238px;
   }
 
   .plans_content__list-wrp {
@@ -1190,6 +1198,10 @@ input[type="radio"] {
     color: #ff2c8b;
   }
 
+  .header_promo_btn {
+    width: 238px;
+  }
+
   .form__sign-up-wrp::before {
     display: none;
   }
@@ -1229,7 +1241,7 @@ input[type="radio"] {
   }
 
   .header_promo_btn {
-    max-width: 335px;
+    max-width: 238px;
     width: 100%;
   }
 
@@ -1483,7 +1495,7 @@ input[type="radio"] {
   }
 
   .header_promo_btn {
-    max-width: 335px;
+    max-width: 238px;
     width: 100%;
   }
 
