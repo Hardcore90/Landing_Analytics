@@ -1578,6 +1578,10 @@ input[type="radio"] {
     height: 173.15px;
   }
 
+  .reports_and_widget_img {
+    margin-bottom: 60px;
+  }
+
   .customizable {
     flex-direction: column-reverse;
     gap: 30px;
