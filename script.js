@@ -59,3 +59,19 @@ const signUpBtnMobile = document.querySelector(".signUp_btn_mobile");
 signUpBtnMobile.addEventListener("click", (e) => {
   e.preventDefault();
 });
+
+let scroll = document.querySelector(".plans_content__list");
+let plansItem = document.querySelectorAll(".plans_content_list__link");
+
+scrollEl.scrollLeft = 300;
+scrollEl.addEventListener("click", function (e) {
+  let event = e.target;
+  if (event && event == plansItem[0]) {
+    scrollEl.scrollLeft = 0;
+    scrollEl.style.transition = "all";
+  } else if (event && event == plansItem[2]) {
+    scrollEl.scrollLeft = 900;
+  } else if (event && event == plansItem[1]) {
+    scrollEl.scrollLeft = 300;
+  }
+});
